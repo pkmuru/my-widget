@@ -1,33 +1,30 @@
 import React, { Component } from "react";
 import { App } from "./App";
-import { Hello } from "./components/Hello";
-
-export interface MainProps
-{
+import Dashboard from "./components/dashboard";
+import Widget from "./components/widget";
+import WidgetSelector from "./components/widget/selector";
+import Testpage from "./testpage";
+import snapshot from './assets/images/snapshot.png';
+export interface MainProps {
     app: App;
 }
 
-interface MainState 
-{
+interface MainState {
 }
 
 export class Main extends Component<MainProps, MainState>
 {
-    constructor(props: MainProps)
-    {
+    constructor(props: MainProps) {
         super(props);
     }
 
-    public render(): JSX.Element
-    {
+    public render(): JSX.Element {
         return (
-            <Hello message="React TypeScript Webpack Starter">
-                <div className="features">
-                    <div>Webpack 5 + HMR</div>
-                    <div>TypeScript + React</div>
-                    <div>SCSS + Autoprefixing</div>
-                </div>
-            </Hello>
+            <div>
+                <Testpage />
+                <img src={snapshot}/>
+            </div>
         );
     }
 }
+

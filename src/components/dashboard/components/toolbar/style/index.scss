@@ -1,0 +1,40 @@
+.react-dashboard-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  padding-bottom: 10px;
+}
+.react-dashboard-toolbar:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+.react-dashboard-toolbar-left {
+  float: left;
+}
+.react-dashboard-toolbar-left button {
+  margin-right: 10px;
+}
+.react-dashboard-toolbar-right {
+  float: right;
+}
+.react-dashboard-toolbar-right button {
+  margin-left: 10px;
+}
+.react-dashboard-toolbar-space {
+  flex: auto;
+  height: 1px;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  -webkit-box-flex: 1;
+}
+.react-dashboard-toolbar-fixed {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+  border-top: 1px solid rgba(128, 128, 128, 0.1);
+  box-shadow: 0 -1px 2px rgba(128, 128, 128, 0.03);
+}

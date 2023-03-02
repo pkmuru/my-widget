@@ -1,0 +1,26 @@
+.react-dashboard-widget-Ring {
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  background: var(--component-background);
+  padding: 20px;
+}
+.react-dashboard-widget-Ring-title-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.react-dashboard-widget-Ring-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+.react-dashboard-widget-Ring-content {
+  color: rgba(128, 128, 128, 0.7);
+}
+.react-dashboard-widget-Ring-item {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+.react-dashboard-widget-Ring-item:last-child {
+  border: none;
+}

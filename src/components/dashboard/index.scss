@@ -1,0 +1,150 @@
+@import '~react-grid-layout/css/styles.css';
+ .react-resizable {
+    position: relative;
+}
+ .react-resizable-handle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    box-sizing: border-box;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2IDYiIHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiNmZmZmZmYwMCIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI2cHgiIGhlaWdodD0iNnB4Ij48ZyBvcGFjaXR5PSIwLjMwMiI+PHBhdGggZD0iTSA2IDYgTCAwIDYgTCAwIDQuMiBMIDQgNC4yIEwgNC4yIDQuMiBMIDQuMiAwIEwgNiAwIEwgNiA2IEwgNiA2IFoiIGZpbGw9IiMwMDAwMDAiLz48L2c+PC9zdmc+');
+    background-position: bottom right;
+    padding: 0 3px 3px 0;
+    display: none;
+}
+ .react-resizable-handle-sw {
+    bottom: 0;
+    left: 0;
+    cursor: sw-resize;
+    transform: rotate(90deg);
+}
+ .react-resizable-handle-se {
+    bottom: 0;
+    right: 0;
+    cursor: se-resize;
+}
+ .react-resizable-handle-nw {
+    top: 0;
+    left: 0;
+    cursor: nw-resize;
+    transform: rotate(180deg);
+}
+ .react-resizable-handle-ne {
+    top: 0;
+    right: 0;
+    cursor: ne-resize;
+    transform: rotate(270deg);
+}
+ .react-resizable-handle-w, .react-resizable-handle-e {
+    top: 50%;
+    margin-top: -10px;
+    cursor: ew-resize;
+}
+ .react-resizable-handle-w {
+    left: 0;
+    transform: rotate(135deg);
+}
+ .react-resizable-handle-e {
+    right: 0;
+    transform: rotate(315deg);
+}
+ .react-resizable-handle-n, .react-resizable-handle-s {
+    left: 50%;
+    margin-left: -10px;
+    cursor: ns-resize;
+}
+ .react-resizable-handle-n {
+    top: 0;
+    transform: rotate(225deg);
+}
+ .react-resizable-handle-s {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+ :root {
+    --primary-color: blue;
+    --component-background: #fff;
+}
+ .react-grid-item > .react-resizable-handle {
+    z-index: 1;
+}
+ .react-dashboard-item-edit .react-resizable-handle {
+    display: block;
+}
+ .react-dashboard-full {
+    width: 100%;
+    height: 100%;
+}
+ .react-dashboard-aligncenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .react-dashboard-emptyContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .react-dashboard-item {
+    position: relative;
+}
+ .react-dashboard-item .react-dashboard-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    cursor: move;
+    transition: all 0.3s;
+}
+ .react-dashboard-item .react-dashboard-configicon {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    z-index: 1;
+    display: none;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    background: var(--primary-color);
+    border-radius: var(--card-border-radius) 0 0 var(--card-border-radius);
+    cursor: pointer;
+}
+ .react-dashboard-item .react-dashboard-deleteicon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    display: none;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    background: #f5222d;
+    border-radius: var(--card-border-radius);
+    cursor: pointer;
+}
+ .react-dashboard-item .react-dashboard-configicon + .react-dashboard-deleteicon {
+    border-radius: 0 var(--card-border-radius) var(--card-border-radius) 0;
+}
+ .react-dashboard-item:hover .react-dashboard-mask {
+    background: rgba(0, 0, 0, 0.05);
+    transition: all 0.3s;
+}
+ .react-dashboard-item:hover .react-dashboard-configicon {
+    display: block;
+}
+ .react-dashboard-item:hover .react-dashboard-deleteicon {
+    display: block;
+}
+ 
